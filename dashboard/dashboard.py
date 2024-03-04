@@ -24,8 +24,7 @@ def create_registered_casual_frequent(df):
     }).reset_index()
     return monthly_totals
 
-day_df = pd.read_csv("all_data.csv")
-hour_df = pd.read_csv("all_data1.csv")
+day_df = pd.read_csv("dashboard/all_data.csv")
 
 # Streamlit App
 def main():
