@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-from babel.numbers import format_currency
-sns.set(style='dark')
 
 def create_season_frequent_df(df):
     result = df.groupby(by="season").cnt.sum().reset_index()
